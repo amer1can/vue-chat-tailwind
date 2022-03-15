@@ -5,7 +5,9 @@ export default createStore({
   state: {
     contacts: [],
     chats: [],
-    currentUserName: ''
+    currentUserName: '',
+    isAuth: false,
+    authName: ''
   },
   getters: {
   },
@@ -19,6 +21,12 @@ export default createStore({
     SET_CHATS_TO_STORE(state, payload) {
       state.chats = payload
     },
+    SET_AUTH_USER_NAME(state, payload) {
+      state.authName = payload
+    },
+    SET_AUTH(state, payload) {
+      state.isAuth = payload
+    }
   },
   actions: {
     GET_CONTACTS({commit}) {
@@ -31,6 +39,15 @@ export default createStore({
     },
     SET_CUR_USER_NAME({commit}, name) {
       commit('SET_CURRENT_USER_NAME', name)
+    },
+    /*eslint-disable no-unused-vars*/
+    SET_MESSAGE_TO_CHAT({commit}, {id, chat}) {
+    /*eslint-enable no-unused-vars*/
+      // console.log(id)
+      // console.log(chat)
+      return axios.put('http://localhost:3000/chats/' + id, chat)
+          .then(response => console.log(response))
+
     }
   },
   modules: {

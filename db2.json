@@ -53,30 +53,6 @@
           "time": "23:10",
           "text": "Kill you! Little cunt!",
           "type": "own"
-        },
-        {
-          "id": 4,
-          "time": "14:23",
-          "text": "russia",
-          "type": "own"
-        },
-        {
-          "id": 5,
-          "time": "14:24",
-          "text": "Hey! YOU!",
-          "type": "own"
-        },
-        {
-          "id": 6,
-          "time": "14:24",
-          "text": "focus",
-          "type": "own"
-        },
-        {
-          "id": 7,
-          "time": "14:26",
-          "text": "234",
-          "type": "own"
         }
       ]
     },
@@ -95,12 +71,6 @@
           "time": "19:31",
           "text": "Fine, and how r u?",
           "type": "others"
-        },
-        {
-          "id": 3,
-          "time": "14:26",
-          "text": "ehy",
-          "type": "own"
         }
       ]
     },
@@ -124,12 +94,6 @@
           "id": 3,
           "time": "19:33",
           "text": "I'm OK too :) ",
-          "type": "own"
-        },
-        {
-          "id": 4,
-          "time": "14:40",
-          "text": "got",
           "type": "own"
         }
       ]
@@ -178,12 +142,6 @@
           "id": 4,
           "time": "19:33",
           "text": "I'm OK too :) ",
-          "type": "own"
-        },
-        {
-          "id": 4,
-          "time": "15:11",
-          "text": "gotten libre!",
           "type": "own"
         }
       ]

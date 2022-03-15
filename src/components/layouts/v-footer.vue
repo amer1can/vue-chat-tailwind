@@ -1,19 +1,19 @@
 <template>
-  <div class="v-footer py-3 px-5 bg-gray-300 flex justify-between">
+  <div class="v-footer bg-indigo-900 text-indigo-100 flex justify-between">
     <router-link to="/">
-      <i class="material-icons">account_circle</i>
+      <i class="material-icons z-50 py-3 px-5">account_circle</i>
     </router-link>
     <router-link to="/chats">
-      <i class="material-icons">chat</i>
+      <i class="material-icons z-50 py-3 px-5">chat</i>
     </router-link>
-    <router-link to="/about">
-      <i class="material-icons">settings</i>
+    <router-link to="/settings">
+      <i class="material-icons z-50 py-3 px-5">settings</i>
     </router-link>
     <router-link to="/">
-      <i class="material-icons">call</i>
+      <i class="material-icons z-50 py-3 px-5">call</i>
     </router-link>
-    <router-link :to="{name: 'chats'}">
-      <i class="material-icons">home</i>
+    <router-link to="/">
+      <i class="material-icons z-50 py-3 px-5">home</i>
     </router-link>
   </div>
 </template>

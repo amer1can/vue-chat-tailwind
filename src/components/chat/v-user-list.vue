@@ -4,6 +4,7 @@
         v-for="chat in chats"
         :key="chat.id"
         :chat_data="chat"
+        @goToChat="showUserChat(chat)"
     />
   </div>
 </template>
@@ -22,8 +23,16 @@ export default {
   },
   methods: {
     ...mapActions([
-        'GET_CHATS'
-    ])
+        'GET_CHATS',
+        'SET_CUR_USER_NAME'
+    ]),
+    showUserChat(chat) {
+      this.$router.push({
+        name: 'chat',
+        params: {id: chat.id}
+      })
+      this.SET_CUR_USER_NAME(chat.name)
+    }
   },
   mounted() {
     this.GET_CHATS()
