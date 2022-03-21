@@ -46,7 +46,7 @@ export default createStore({
       // console.log(id)
       // console.log(chat)
       return axios.put('http://localhost:3000/chats/' + id, chat)
-          .then(response => console.log(response))
+          .then(response => console.log('put',response))
 
     }
   },
